@@ -10,6 +10,8 @@
 
 [Git Documentation](https://git-scm.com/docs)
 
+[Semantic Versioning](https://semver.org/)
+
 ## Extensions & Tools
 
 [Git Bash Download](https://git-scm.com/downloads)
@@ -20,6 +22,6 @@
 
 ## Additional Labs & Walkthroughs
 
-[Introduction to Git](https://docs.microsoft.com/en-us/learn/modules/intro-to-git/)
-
 [Learning Path - Introduction to version control with Git](https://docs.microsoft.com/en-us/learn/paths/intro-to-vc-git/)
+
+[Manage repository changes by using pull requests on GitHub](https://docs.microsoft.com/en-us/learn/modules/manage-changes-pull-requests-github/)
