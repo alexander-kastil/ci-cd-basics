@@ -9,3 +9,12 @@
 [GitLab](https://gitlab.com/)
 
 [Bamboo](https://www.atlassian.com/de/software/bamboo)
+
+### Demos
+
+Show Common DevOps Systems:
+
+- Jenkins
+- GitLab
+- Azure DevOps
+- GitHub
