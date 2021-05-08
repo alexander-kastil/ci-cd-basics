@@ -1,4 +1,4 @@
-# Labs
+# DevOps-Intro Labs
 
 ## Intro
 
