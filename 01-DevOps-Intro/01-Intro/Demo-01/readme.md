@@ -1,7 +1,5 @@
 # Jenkins
 
-[Jenkins Lab](https://azuredevopslabs.com/labs/vstsextend/Jenkins/)
-
 Connect to Jenkins:
 
 ```
