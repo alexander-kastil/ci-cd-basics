@@ -11,9 +11,15 @@
   - .NET Deployment
   - Angular Deployment
 
-- Securing Testing
+- Containers
+
+  - Docker Basics & Build
+  - Kubernets Basics & Deployment
+
+- Configuration
 
   - SPFx Deployment using Key Vault
+  - App Config
 
 - Monitoring
 
