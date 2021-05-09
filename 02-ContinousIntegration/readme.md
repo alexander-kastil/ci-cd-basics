@@ -8,7 +8,7 @@
   - Angular CI
   - SharePoint Framework CI
   - Custom Build Agent
-  - Triggers, PathFilters & Variables
+  - Triggers, Path Filters & Variables
   - Multistage Pipelines & Templates
 
 - Package Management
