@@ -20,7 +20,7 @@
 
   - .NET Unit Testing
 
-- Security
+- Security & Technical Debt
 
   - WhiteSource
   - Sonar Cloud
