@@ -1,0 +1,522 @@
+{
+  "source": 2,
+  "revision": 3,
+  "description": null,
+  "createdBy": {
+    "displayName": "Alexander Pajer",
+    "url": "https://spsprodweu3.vssps.visualstudio.com/A6aa91e30-0fdc-4040-a4af-1d637da19519/_apis/Identities/459f3623-3d4d-6221-8365-dea680982fc6",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+      }
+    },
+    "id": "459f3623-3d4d-6221-8365-dea680982fc6",
+    "uniqueName": "alexander.pajer@integrations.at",
+    "imageUrl": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2",
+    "descriptor": "aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+  },
+  "createdOn": "2020-06-17T18:51:10.953Z",
+  "modifiedBy": {
+    "displayName": "Alexander Pajer",
+    "url": "https://spsprodweu3.vssps.visualstudio.com/A6aa91e30-0fdc-4040-a4af-1d637da19519/_apis/Identities/459f3623-3d4d-6221-8365-dea680982fc6",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+      }
+    },
+    "id": "459f3623-3d4d-6221-8365-dea680982fc6",
+    "uniqueName": "alexander.pajer@integrations.at",
+    "imageUrl": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2",
+    "descriptor": "aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+  },
+  "modifiedOn": "2020-06-17T18:56:24.447Z",
+  "isDeleted": false,
+  "lastRelease": {
+    "id": 2,
+    "name": "Release-2",
+    "artifacts": [],
+    "_links": {},
+    "description": "",
+    "releaseDefinition": { "id": 3, "projectReference": null, "_links": {} },
+    "createdOn": "2020-06-17T18:56:34.843Z",
+    "createdBy": {
+      "displayName": "Alexander Pajer",
+      "url": "https://spsprodweu3.vssps.visualstudio.com/A6aa91e30-0fdc-4040-a4af-1d637da19519/_apis/Identities/459f3623-3d4d-6221-8365-dea680982fc6",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+        }
+      },
+      "id": "459f3623-3d4d-6221-8365-dea680982fc6",
+      "uniqueName": "alexander.pajer@integrations.at",
+      "imageUrl": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2",
+      "descriptor": "aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+    }
+  },
+  "variables": { "suff": { "value": "alexpajer" } },
+  "variableGroups": [],
+  "environments": [
+    {
+      "id": 3,
+      "name": "Provisioning",
+      "rank": 1,
+      "owner": {
+        "displayName": "Alexander Pajer",
+        "url": "https://spsprodweu3.vssps.visualstudio.com/A6aa91e30-0fdc-4040-a4af-1d637da19519/_apis/Identities/459f3623-3d4d-6221-8365-dea680982fc6",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+          }
+        },
+        "id": "459f3623-3d4d-6221-8365-dea680982fc6",
+        "uniqueName": "alexander.pajer@integrations.at",
+        "imageUrl": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2",
+        "descriptor": "aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+      },
+      "variables": {},
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          { "rank": 1, "isAutomated": true, "isNotificationOn": false, "id": 7 }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": { "id": 9 },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 11
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": { "identifier": "ubuntu-20.04" },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 84,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+              "version": "2.*",
+              "name": "Azure CLI ",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectedServiceNameARM": "c3ebccbc-a3f5-4c18-88d0-9a2edc027bf4",
+                "scriptType": "bash",
+                "scriptLocation": "inlineScript",
+                "scriptPath": "",
+                "inlineScript": "rnd=$(suff)\nloc=westeurope\ngrp=az400-T03-simplerelease-$rnd\nappPlan=simplerelease-$rnd\nweb=mvc-simplerelease-$rnd\n\naz group create -n $grp -l $loc\naz appservice plan create -n $appPlan -g $grp --sku FREE\naz webapp create -n $web -g $grp --plan $appPlan",
+                "scriptArguments": "",
+                "powerShellErrorActionPreference": "stop",
+                "addSpnToEnvironment": "false",
+                "useGlobalConfig": "false",
+                "cwd": "",
+                "failOnStandardError": "false",
+                "powerShellIgnoreLASTEXITCODE": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        { "name": "ReleaseStarted", "conditionType": 1, "value": "" }
+      ],
+      "executionPolicy": { "concurrencyCount": 1, "queueDepthCount": 0 },
+      "schedules": [],
+      "currentRelease": {
+        "id": 2,
+        "url": "https://vsrm.dev.azure.com/integrationstraining/c343626e-dbdb-4ac1-9438-11d960c9bdfa/_apis/Release/releases/2",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": { "$type": "System.String", "$value": "False" }
+      },
+      "preDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "postDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/integrationstraining/_apis/public/Release/badge/c343626e-dbdb-4ac1-9438-11d960c9bdfa/3/3"
+    },
+    {
+      "id": 4,
+      "name": "Deploy",
+      "rank": 2,
+      "owner": {
+        "displayName": "Alexander Pajer",
+        "url": "https://spsprodweu3.vssps.visualstudio.com/A6aa91e30-0fdc-4040-a4af-1d637da19519/_apis/Identities/459f3623-3d4d-6221-8365-dea680982fc6",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+          }
+        },
+        "id": "459f3623-3d4d-6221-8365-dea680982fc6",
+        "uniqueName": "alexander.pajer@integrations.at",
+        "imageUrl": "https://dev.azure.com/integrationstraining/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2",
+        "descriptor": "aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+      },
+      "variables": {},
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          { "rank": 1, "isAutomated": true, "isNotificationOn": false, "id": 8 }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": { "id": 12 },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 13
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": { "identifier": "ubuntu-20.04" },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 84,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Run on agent",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "497d490f-eea7-4f2b-ab94-48d9c1acdcb1",
+              "version": "4.*",
+              "name": "Deploy Azure App Service",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": null,
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "ConnectionType": "AzureRM",
+                "ConnectedServiceName": "$(Parameters.ConnectedServiceName)",
+                "PublishProfilePath": "$(System.DefaultWorkingDirectory)/**/*.pubxml",
+                "PublishProfilePassword": "",
+                "WebAppKind": "$(Parameters.WebAppKind)",
+                "WebAppName": "$(Parameters.WebAppName)",
+                "DeployToSlotOrASEFlag": "false",
+                "ResourceGroupName": "",
+                "SlotName": "production",
+                "DockerNamespace": "$(Parameters.DockerNamespace)",
+                "DockerRepository": "$(Parameters.DockerRepository)",
+                "DockerImageTag": "$(Build.BuildId)",
+                "VirtualApplication": "",
+                "Package": "$(System.DefaultWorkingDirectory)/**/*.zip",
+                "RuntimeStack": "",
+                "RuntimeStackFunction": "",
+                "StartupCommand": "$(Parameters.StartupCommand)",
+                "ScriptType": "",
+                "InlineScript": "",
+                "ScriptPath": "",
+                "WebConfigParameters": "",
+                "AppSettings": "",
+                "ConfigurationSettings": "",
+                "UseWebDeploy": "false",
+                "DeploymentType": "webDeploy",
+                "TakeAppOfflineFlag": "true",
+                "SetParametersFile": "",
+                "RemoveAdditionalFilesFlag": "false",
+                "ExcludeFilesFromAppDataFlag": "false",
+                "AdditionalArguments": "",
+                "RenameFilesFlag": "true",
+                "XmlTransformation": "false",
+                "XmlVariableSubstitution": "false",
+                "JSONFiles": ""
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        { "name": "Provisioning", "conditionType": 2, "value": "4" }
+      ],
+      "executionPolicy": { "concurrencyCount": 1, "queueDepthCount": 0 },
+      "schedules": [],
+      "currentRelease": {
+        "id": 2,
+        "url": "https://vsrm.dev.azure.com/integrationstraining/c343626e-dbdb-4ac1-9438-11d960c9bdfa/_apis/Release/releases/2",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {
+        "inputs": [
+          {
+            "aliases": [],
+            "options": {},
+            "properties": {},
+            "name": "ConnectedServiceName",
+            "label": "Azure subscription",
+            "defaultValue": "c3ebccbc-a3f5-4c18-88d0-9a2edc027bf4",
+            "required": true,
+            "type": "connectedService:AzureRM",
+            "helpMarkDown": "Select the Azure Resource Manager subscription for the deployment.",
+            "visibleRule": "",
+            "groupName": ""
+          },
+          {
+            "aliases": [],
+            "options": {
+              "webApp": "Web App on Windows",
+              "webAppLinux": "Web App on Linux",
+              "webAppContainer": "Web App for Containers (Linux)",
+              "functionApp": "Function App on Windows",
+              "functionAppLinux": "Function App on Linux",
+              "functionAppContainer": "Function App for Containers (Linux)",
+              "apiApp": "API App",
+              "mobileApp": "Mobile App"
+            },
+            "properties": { "EditableOptions": "false" },
+            "name": "WebAppKind",
+            "label": "App type",
+            "defaultValue": "webApp",
+            "type": "pickList",
+            "helpMarkDown": "",
+            "groupName": ""
+          },
+          {
+            "aliases": [],
+            "options": {},
+            "properties": { "EditableOptions": "True" },
+            "name": "WebAppName",
+            "label": "App service name",
+            "defaultValue": "mvc-simplerelease-alexpajer",
+            "required": true,
+            "type": "pickList",
+            "helpMarkDown": "Enter or select the name of an existing Azure App Service.",
+            "visibleRule": "",
+            "groupName": ""
+          },
+          {
+            "aliases": [],
+            "options": {},
+            "properties": {},
+            "name": "DockerNamespace",
+            "label": "Registry or Namespace",
+            "defaultValue": "",
+            "required": true,
+            "type": "string",
+            "helpMarkDown": "A globally unique top-level domain name for your specific registry or namespace.<br/> Note: Fully qualified image name will be of the format: '<b>`<registry or namespace`></b>/`<repository`>:`<tag`>'. For example, '<b>myregistry.azurecr.io</b>/nginx:latest'.",
+            "visibleRule": "WebAppKind = webAppContainer || WebAppkind = functionAppContainer",
+            "groupName": ""
+          },
+          {
+            "aliases": [],
+            "options": {},
+            "properties": {},
+            "name": "DockerRepository",
+            "label": "Repository",
+            "defaultValue": "",
+            "required": true,
+            "type": "string",
+            "helpMarkDown": "Name of the repository where the container images are stored.<br/> Note: Fully qualified image name will be of the format: '`<registry or namespace`>/<b>`<repository`></b>:`<tag`>'. For example, 'myregistry.azurecr.io/<b>nginx</b>:latest'.",
+            "visibleRule": "WebAppKind = webAppContainer || WebAppkind = functionAppContainer",
+            "groupName": ""
+          },
+          {
+            "aliases": [],
+            "options": {},
+            "properties": {},
+            "name": "StartupCommand",
+            "label": "Startup command",
+            "defaultValue": "",
+            "type": "string",
+            "helpMarkDown": "Enter the start up command. For ex.<br/>dotnet run<br/>dotnet filename.dll",
+            "visibleRule": "WebAppKind = webAppLinux || WebAppKind = webAppContainer || WebAppkind = functionAppContainer || WebAppKind = functionAppLinux",
+            "groupName": ""
+          }
+        ],
+        "dataSourceBindings": [
+          {
+            "dataSourceName": "AzureRMWebAppNamesByAppType",
+            "parameters": { "WebAppKind": "$(WebAppKind)" },
+            "endpointId": "$(ConnectedServiceName)",
+            "target": "WebAppName"
+          }
+        ]
+      },
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": { "$type": "System.String", "$value": "False" }
+      },
+      "preDeploymentGates": {
+        "id": 10,
+        "gatesOptions": {
+          "isEnabled": true,
+          "timeout": 1440,
+          "samplingInterval": 15,
+          "stabilizationTime": 3,
+          "minimumSuccessDuration": 0
+        },
+        "gates": []
+      },
+      "postDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/integrationstraining/_apis/public/Release/badge/c343626e-dbdb-4ac1-9438-11d960c9bdfa/3/4"
+    }
+  ],
+  "artifacts": [
+    {
+      "sourceId": "1df9d59d-363b-4685-afe0-caf71ef838c2:33",
+      "type": "Build",
+      "alias": "_CoreBuild",
+      "definitionReference": {
+        "artifactSourceDefinitionUrl": {
+          "id": "https://dev.azure.com/integrationstraining/_permalink/_build/index?collectionId=22f00c6a-ae63-43eb-94c2-752364698506&projectId=1df9d59d-363b-4685-afe0-caf71ef838c2&definitionId=33",
+          "name": ""
+        },
+        "defaultVersionBranch": { "id": "", "name": "" },
+        "defaultVersionSpecific": { "id": "", "name": "" },
+        "defaultVersionTags": { "id": "", "name": "" },
+        "defaultVersionType": { "id": "latestType", "name": "Latest" },
+        "definition": { "id": "33", "name": "CoreBuild" },
+        "definitions": { "id": "", "name": "" },
+        "IsMultiDefinitionType": { "id": "False", "name": "False" },
+        "project": {
+          "id": "1df9d59d-363b-4685-afe0-caf71ef838c2",
+          "name": "AZ-400-T03"
+        },
+        "repository": { "id": "", "name": "" }
+      },
+      "isPrimary": true,
+      "isRetained": false
+    }
+  ],
+  "triggers": [],
+  "releaseNameFormat": "Release-$(rev:r)",
+  "tags": [],
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseImport"
+    },
+    "IntegrateBoardsWorkItems": { "$type": "System.String", "$value": "False" },
+    "IntegrateJiraWorkItems": { "$type": "System.String", "$value": "false" }
+  },
+  "id": 3,
+  "name": "Use Az CLI",
+  "path": "\\",
+  "projectReference": null,
+  "url": "https://vsrm.dev.azure.com/integrationstraining/c343626e-dbdb-4ac1-9438-11d960c9bdfa/_apis/Release/definitions/3",
+  "_links": {
+    "self": {
+      "href": "https://vsrm.dev.azure.com/integrationstraining/c343626e-dbdb-4ac1-9438-11d960c9bdfa/_apis/Release/definitions/3"
+    },
+    "web": {
+      "href": "https://dev.azure.com/integrationstraining/c343626e-dbdb-4ac1-9438-11d960c9bdfa/_release?definitionId=3"
+    }
+  }
+}
