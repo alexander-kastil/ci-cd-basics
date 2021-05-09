@@ -7,6 +7,9 @@
   - .NET CI
   - Angular CI
   - SharePoint Framework CI
+  - Custom Build Agent
+  - Triggers, PathFilters & Variables
+  - Multistage Pipelines
 
 - Package Management
 
