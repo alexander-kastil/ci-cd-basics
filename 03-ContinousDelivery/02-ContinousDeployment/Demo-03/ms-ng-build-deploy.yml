@@ -1,0 +1,71 @@
+name: "ng-ui-blobstorage"
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - ngUI/*
+
+pool:
+  vmImage: "ubuntu-20.04"
+
+variables:
+  azureSubscription: "Visual Studio Enterprise (78033352-805c-4acd-af80-f8f95083268d)"
+  serviceConnection: "conNet5App"
+  uiPath: "ngUI/"
+  ngScript: "create-static-website.sh"
+  artifact: "ngapp"
+  acctName: "net5ngui"
+  acctKey: "vzKZMetc+2XuQsAa88fiNpkWfHQQxfFkma/lJwFXohaFmOcM/ljnkiVKD1CZbUriZFGMhYD05//gTzQ0eqqy6g=="
+
+stages:
+  - stage: "Provision"
+    jobs:
+      - job: "Provision"
+        displayName: "Provision Static WebSite"
+
+        steps:
+          - task: AzureCLI@2
+            displayName: Azure CLI
+            inputs:
+              azureSubscription: $(serviceConnection)
+              scriptType: bash
+              scriptLocation: scriptPath
+              scriptPath: Deploy/$(ngScript)
+
+  - stage: Build_and_Deploy
+    jobs:
+      - job: Build_Deploy
+
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: "12.x"
+            displayName: "Install Node.js"
+
+          - script: |
+              npm i -g @angular/cli
+              npm i
+              ng build --prod
+            displayName: "npm install and build"
+            workingDirectory: $(uiPath)
+
+          - task: AzureCLI@2
+            displayName: Upload to Static Website
+            inputs:
+              azureSubscription: $(serviceConnection)
+              scriptType: bash
+              scriptLocation: inlineScript
+              inlineScript: |
+                ls
+                acct=$(acctName)
+                key=$(acctKey)
+                az storage blob upload-batch --account-name $acct --account-key $key -s $(System.DefaultWorkingDirectory)/ngUI/dist/ngUI/ -d '$web'
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: "ngUI/dist/ngUI"
+              ArtifactName: $(artifact)
+              publishLocation: "Container"
+            displayName: "Publish build"

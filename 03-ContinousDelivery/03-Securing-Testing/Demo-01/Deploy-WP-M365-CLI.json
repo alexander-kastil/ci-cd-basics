@@ -1,0 +1,328 @@
+{
+  "source": 2,
+  "revision": 4,
+  "description": null,
+  "createdBy": {
+    "displayName": "Alexander Pajer",
+    "url": "https://spsprodweu3.vssps.visualstudio.com/A0806d800-3a47-41c0-ba47-2bb3caefddbc/_apis/Identities/459f3623-3d4d-6221-8365-dea680982fc6",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/az-400-v2/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+      }
+    },
+    "id": "459f3623-3d4d-6221-8365-dea680982fc6",
+    "uniqueName": "alexander.pajer@integrations.at",
+    "imageUrl": "https://dev.azure.com/az-400-v2/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2",
+    "descriptor": "aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+  },
+  "createdOn": "2021-02-20T12:47:23.170Z",
+  "modifiedBy": {
+    "displayName": "Alexander Pajer",
+    "url": "https://spsprodweu3.vssps.visualstudio.com/A0806d800-3a47-41c0-ba47-2bb3caefddbc/_apis/Identities/459f3623-3d4d-6221-8365-dea680982fc6",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/az-400-v2/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+      }
+    },
+    "id": "459f3623-3d4d-6221-8365-dea680982fc6",
+    "uniqueName": "alexander.pajer@integrations.at",
+    "imageUrl": "https://dev.azure.com/az-400-v2/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2",
+    "descriptor": "aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+  },
+  "modifiedOn": "2021-02-20T12:52:36.780Z",
+  "isDeleted": false,
+  "lastRelease": {
+    "id": 2,
+    "name": "Release-2",
+    "artifacts": [],
+    "_links": {},
+    "description": "",
+    "releaseDefinition": { "id": 1, "projectReference": null, "_links": {} },
+    "createdOn": "2021-02-20T12:52:39.847Z",
+    "createdBy": {
+      "displayName": "Alexander Pajer",
+      "url": "https://spsprodweu3.vssps.visualstudio.com/A0806d800-3a47-41c0-ba47-2bb3caefddbc/_apis/Identities/459f3623-3d4d-6221-8365-dea680982fc6",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/az-400-v2/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+        }
+      },
+      "id": "459f3623-3d4d-6221-8365-dea680982fc6",
+      "uniqueName": "alexander.pajer@integrations.at",
+      "imageUrl": "https://dev.azure.com/az-400-v2/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2",
+      "descriptor": "aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+    }
+  },
+  "variables": {
+    "catalogsite": { "value": "site/apps" },
+    "password": { "value": null, "isSecret": true },
+    "tenant": { "value": "integrationsonline" },
+    "username": { "value": "alexander.pajer@integrations.at" }
+  },
+  "variableGroups": [],
+  "environments": [
+    {
+      "id": 1,
+      "name": "Deploy",
+      "rank": 1,
+      "owner": {
+        "displayName": "Alexander Pajer",
+        "url": "https://spsprodweu3.vssps.visualstudio.com/A0806d800-3a47-41c0-ba47-2bb3caefddbc/_apis/Identities/459f3623-3d4d-6221-8365-dea680982fc6",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/az-400-v2/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+          }
+        },
+        "id": "459f3623-3d4d-6221-8365-dea680982fc6",
+        "uniqueName": "alexander.pajer@integrations.at",
+        "imageUrl": "https://dev.azure.com/az-400-v2/_apis/GraphProfile/MemberAvatars/aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2",
+        "descriptor": "aad.NDU5ZjM2MjMtM2Q0ZC03MjIxLTgzNjUtZGVhNjgwOTgyZmM2"
+      },
+      "variables": {},
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          { "rank": 1, "isAutomated": true, "isNotificationOn": false, "id": 1 }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": { "id": 2 },
+      "postDeployApprovals": {
+        "approvals": [
+          { "rank": 1, "isAutomated": true, "isNotificationOn": false, "id": 3 }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": { "identifier": "ubuntu-20.04" },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 108,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "31c75bbb-bcdf-4706-8d7c-4da6a1959bc2",
+              "version": "0.*",
+              "name": "Use Node 10.x",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "versionSpec": "10.x",
+                "checkLatest": "false",
+                "force32bit": "false"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "fe47e961-9fa8-4106-8639-368c022d43ad",
+              "version": "1.*",
+              "name": "npm i -g @pnp/cli-microsoft365",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "command": "custom",
+                "workingDir": "",
+                "verbose": "false",
+                "customCommand": "install -g @pnp/cli-microsoft365",
+                "customRegistry": "useNpmrc",
+                "customFeed": "",
+                "customEndpoint": "",
+                "publishRegistry": "useExternalRegistry",
+                "publishFeed": "",
+                "publishPackageMetadata": "true",
+                "publishEndpoint": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+              "version": "2.*",
+              "name": "Connect to M365",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "script": "m365 login -t password -u $(username) -p $(password)\n",
+                "workingDirectory": "",
+                "failOnStderr": "false"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+              "version": "2.*",
+              "name": "Upload to App Catalog",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "script": "m365 spo app add -p $(System.DefaultWorkingDirectory)/_webPart/drop/sharepoint/solution/sp-fx-web-part.sppkg --overwrite",
+                "workingDirectory": "",
+                "failOnStderr": "false"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+              "version": "2.*",
+              "name": "Deploy App",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "script": "m365 spo app deploy --name sp-fx-build.sppkg",
+                "workingDirectory": "",
+                "failOnStderr": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        { "name": "ReleaseStarted", "conditionType": 1, "value": "" }
+      ],
+      "executionPolicy": { "concurrencyCount": 1, "queueDepthCount": 0 },
+      "schedules": [],
+      "currentRelease": {
+        "id": 2,
+        "url": "https://vsrm.dev.azure.com/az-400-v2/99a13c07-9562-4824-b660-14c3eb652d23/_apis/Release/releases/2",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": { "$type": "System.String", "$value": "False" }
+      },
+      "preDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "postDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/az-400-v2/_apis/public/Release/badge/99a13c07-9562-4824-b660-14c3eb652d23/1/1"
+    }
+  ],
+  "artifacts": [
+    {
+      "sourceId": "99a13c07-9562-4824-b660-14c3eb652d23:27",
+      "type": "Build",
+      "alias": "_webPart",
+      "definitionReference": {
+        "artifactSourceDefinitionUrl": {
+          "id": "https://dev.azure.com/az-400-v2/_permalink/_build/index?collectionId=516a19ae-88dc-46cb-b376-c145f4313603&projectId=99a13c07-9562-4824-b660-14c3eb652d23&definitionId=27",
+          "name": ""
+        },
+        "defaultVersionBranch": { "id": "", "name": "" },
+        "defaultVersionSpecific": { "id": "", "name": "" },
+        "defaultVersionTags": { "id": "", "name": "" },
+        "defaultVersionType": { "id": "latestType", "name": "Latest" },
+        "definition": { "id": "27", "name": "ARambazamba.SPFxWebPart" },
+        "definitions": { "id": "", "name": "" },
+        "IsMultiDefinitionType": { "id": "False", "name": "False" },
+        "project": {
+          "id": "99a13c07-9562-4824-b660-14c3eb652d23",
+          "name": "AZ-400-M11-CD"
+        },
+        "repository": { "id": "", "name": "" }
+      },
+      "isPrimary": true,
+      "isRetained": false
+    }
+  ],
+  "triggers": [],
+  "releaseNameFormat": "Release-$(rev:r)",
+  "tags": [],
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseNew"
+    },
+    "IntegrateBoardsWorkItems": { "$type": "System.String", "$value": "False" },
+    "IntegrateJiraWorkItems": { "$type": "System.String", "$value": "false" }
+  },
+  "id": 1,
+  "name": "Deploy WP M365 CLI",
+  "path": "\\",
+  "projectReference": null,
+  "url": "https://vsrm.dev.azure.com/az-400-v2/99a13c07-9562-4824-b660-14c3eb652d23/_apis/Release/definitions/1",
+  "_links": {
+    "self": {
+      "href": "https://vsrm.dev.azure.com/az-400-v2/99a13c07-9562-4824-b660-14c3eb652d23/_apis/Release/definitions/1"
+    },
+    "web": {
+      "href": "https://dev.azure.com/az-400-v2/99a13c07-9562-4824-b660-14c3eb652d23/_release?definitionId=1"
+    }
+  }
+}
