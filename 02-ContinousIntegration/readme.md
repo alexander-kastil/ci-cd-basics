@@ -8,8 +8,8 @@
   - Angular CI
   - SharePoint Framework CI
   - Custom Build Agent
-  - Triggers, PathFilters & Variables
-  - Multistage Pipelines
+  - Triggers, Path Filters & Variables
+  - Multistage Pipelines & Templates
 
 - Package Management
 
@@ -20,7 +20,7 @@
 
   - .NET Unit Testing
 
-- Security
+- Security & Technical Debt
 
   - WhiteSource
   - Sonar Cloud
