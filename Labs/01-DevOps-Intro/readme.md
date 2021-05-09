@@ -8,6 +8,8 @@
 
 [Create GitHub Account](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account)
 
+[GitHub Actions: Hello World](https://lab.github.com/githubtraining/github-actions:-hello-world)
+
 ## Source Control
 
 [Learning Path - Introduction to version control with Git](https://docs.microsoft.com/en-us/learn/paths/intro-to-vc-git/)
@@ -15,5 +17,3 @@
 [Review Pull Requests](https://lab.github.com/githubtraining/reviewing-pull-requests)
 
 [Manage Merge Conflicts](https://lab.github.com/githubtraining/managing-merge-conflicts)
-
-[GitHub Actions: Hello World](https://lab.github.com/githubtraining/github-actions:-hello-world)

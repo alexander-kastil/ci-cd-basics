@@ -1,5 +1,15 @@
 # Introduction to DevOps
 
+## Demos
+
+Show Common DevOps Systems:
+
+- Jenkins
+- Azure DevOps
+- GitHub
+
+## Readings
+
 [Jenkins](https://www.jenkins.io/)
 
 [Azure DevOps](https://dev.azure.com/)
@@ -9,12 +19,3 @@
 [GitLab](https://gitlab.com/)
 
 [Bamboo](https://www.atlassian.com/de/software/bamboo)
-
-### Demos
-
-Show Common DevOps Systems:
-
-- Jenkins
-- GitLab
-- Azure DevOps
-- GitHub

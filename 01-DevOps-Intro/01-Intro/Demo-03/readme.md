@@ -1,6 +1,6 @@
 # GitHub Actions
 
-- Build and Deploy using GitHub Actions
+- Build and Deploy `FoodApi` using GitHub Actions
 
 Instructions:
 
