@@ -9,7 +9,7 @@
   - SharePoint Framework CI
   - Custom Build Agent
   - Triggers, PathFilters & Variables
-  - Multistage Pipelines
+  - Multistage Pipelines & Templates
 
 - Package Management
 
