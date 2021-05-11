@@ -36,6 +36,22 @@ Configure the agent using `config.cmd` from `/agent` folder. A detailed descript
 
 > Note: Another option would be to use a [Container based agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops)
 
+Use this yaml to reference your custom agent in pool `FastLane`:
+
+```
+name: "build-simple-net-core-api-yaml"
+trigger:
+  branches:
+    include:
+      - master
+
+pool:
+  name: FastLane
+
+variables:
+  buildConfiguration: "Release"
+```
+
 ## Azure DevOps
 
 [Create a build pipeline with Azure Pipelines](https://docs.microsoft.com/en-us/learn/modules/create-a-build-pipeline/)
