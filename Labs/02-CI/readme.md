@@ -1,12 +1,24 @@
 # Continous Integration
 
-## Prerequestits
+## Prerequisites
 
 Because of ressource restrictions in Azure you might have to install a custom build agent.
 
 ![limitations](_images/limitations.png)
 
 > Note: Further info can be found [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted)
+
+Options:
+
+- Ask Microsoft to enable free agents by writing an e-mail to `azpipelines-freetier@microsoft.com` with the following text:
+
+```
+I would ask you to enable free jobs for the tenant XY belonging to EMAIL as I am taking an AZ-400 (Azure Devops) training this week
+```
+
+- Setup a custom build agent
+
+### Custom Build Agent Setup
 
 Follow the steps described:
 
