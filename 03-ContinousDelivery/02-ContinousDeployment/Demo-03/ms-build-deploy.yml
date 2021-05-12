@@ -17,7 +17,7 @@ variables:
   appservice: foodapi-900
 
 pool:
-  vmImage: "ubuntu-20.04"
+  name: FastLane
 
 stages:
   - stage: Build
