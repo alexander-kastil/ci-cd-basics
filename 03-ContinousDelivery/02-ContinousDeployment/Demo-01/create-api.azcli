@@ -1,5 +1,5 @@
-rnd=$RANDOM
-grp=az400-m10-foodapp
+rnd=900
+grp=cicd-basics-$rnd
 appPlan=foodplan-$rnd
 app=foodapi-$rnd
 loc=westeurope
