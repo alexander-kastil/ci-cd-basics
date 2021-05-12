@@ -67,6 +67,7 @@ stages:
     jobs:
       - deployment: DeployAppService
         displayName: Deploy to Appservice
+        environment: FoodStaging
         strategy:
           runOnce:
             deploy:
