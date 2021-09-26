@@ -16,12 +16,6 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
   - [Use Teams in VM](./Setup/#teams)
 - [Labs](./Labs)
 
-> Note: Labs are taken from the official repo [AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://github.com/MicrosoftLearning/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions)
-
-## Exam
-
-[Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/en-us/learn/certifications/exams/az-400)
-
 ## Required Cloud Ressources
 
 - [Github User Account](https://github.com/)
