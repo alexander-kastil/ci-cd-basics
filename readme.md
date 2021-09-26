@@ -1,35 +1,44 @@
-# Topics
+# AZ-400: Designing and Implementing Microsoft DevOps Solutions
 
-- DevOps Intro
+Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
 
-  - Introduction to DevOps
-  - Using Source Control
+- [Requirements / Tooling](./Tooling)
+  - [Register Azure DevOps Organisation](./Tooling/07-AzDevOps)
+  - [Register Azure Pass](./Tooling/05-AzurePass)
+  - [Git & GitHub Basics](./Tooling/01-Github)
+  - [Visual Studio Code Intro](./Tooling/02-VSCode)
+  - [Document Repos using Markdown](./Tooling/03-Markdown)
+  - [Using Azure CLI](./Tooling/04-CLI)
+- [Instructor Demos](./Demos)
+- [Guided Scripts to setup an Azure hosted Development & Lab VM](./Setup)
+  - [Base Dev Environment Setup inkluding Visual Studio Code Extensions](./Setup/#basics)
+  - [Setup Windows Subsystem for Linux 2 - WSL2](./Setup/#wsl)
+  - [Setup Docker & Kubernetes](./Setup/#docker-wsl)
+  - [Use Teams in VM](./Setup/#teams)
+- [Labs](./Labs)
 
-- Continous Integration
+> Note: Labs are taken from the official repo [AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://github.com/MicrosoftLearning/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions)
 
-  - Continous Integration Overview
+## Exam
 
-  - Package Management
+[Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/en-us/learn/certifications/exams/az-400)
 
-  - Testing
+## Required Cloud Ressources
 
-  - Security & Technical Debt
+- [Github User Account](https://github.com/)
 
-- Continous Delivery / Continous Deployment
+- [Azure DevOps Account](https://dev.azure.com/)
 
-  - Infrastructure as Code
+- Azure Subscription:
 
-    - Azure CLI
-    - ARM
-    - Terraform
+  Please do not use a Production Account for Training
 
-  - Continous Deployment
+  - Using [Azure Passes](https://www.microsoftazurepass.com/)
+  - Azure Paid / Sponsored Subscription
+  - [Azure Trial Subscription](https://azure.microsoft.com/en-us/free/)
 
-  - Containers
+> Note: Azure Passes can only be used once per e-mail account (Live ID)
 
-    - Docker Basics & Build
-    - Kubernets Basics & Deployment
+## Contributing
 
-  - Configuration
-
-  - Monitoring & Feedback
+Feel free to contribute. When contribute implement your changes / additions on a feature branch in your fork and issue a pull request after completion. An introduction video into forks and pull requests can be found [here](https://www.youtube.com/watch?v=nT8KGYVurIU)
