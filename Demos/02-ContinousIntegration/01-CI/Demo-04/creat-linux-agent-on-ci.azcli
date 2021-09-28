@@ -7,7 +7,7 @@ agent=aci-linux-agent-$rnd
 # update org name
 org='https://dev.azure.com/integrations-training'
 # replace the token and uncomment if you have not exported the token to bash
-token=ykyd6sppye5q454hxtwog5cspa34atqigmagk7l5waml3b7qxtdq
+token=ykyd6sppye5q454hxtwog5cspa34atqigmagk7l5waml3b7....
 pool=aci-pool
 
 az group create -n $grp -l $loc
