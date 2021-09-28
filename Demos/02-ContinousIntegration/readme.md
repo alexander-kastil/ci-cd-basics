@@ -10,6 +10,7 @@
   - Custom Build Agent
   - Triggers, Path Filters & Variables
   - Multistage Pipelines & Templates
+  - GitHub Actions CI
 
 - Package Management
 
