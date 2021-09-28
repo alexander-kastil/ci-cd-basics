@@ -1,0 +1,21 @@
+rnd=$RANDOM
+# acr=integrationsonline
+grp=az400-aciagent-$rnd
+loc=westeurope
+img='arambazamba/aciagentlinux'
+agent=aci-linux-agent-$rnd
+# update org name
+org='https://dev.azure.com/az-400-v2'
+# replace the token and uncomment if you have not exported the token to bash
+# token=ae3ypool6mvpf7624it7j4smbveyrics4rnpul...
+pool=aci-pool
+
+az group create -n $grp -l $loc
+
+agent=aci-linux-agent-$RANDOM
+
+az container create -g $grp -l $loc -n $agent --image $img --cpu 1 --memory 1 --dns-name-label $agent --port 80 --environment-variables 'AZP_URL'=$org 'AZP_TOKEN'=$token 'AZP_AGENT_NAME'=$agent 'AZP_POOL'=$pool --no-wait
+
+agent=aci-linux-agent-$RANDOM
+
+az container create -g $grp -l $loc -n $agent --image $img --cpu 1 --memory 1 --dns-name-label $agent --port 80 --environment-variables 'AZP_URL'=$org 'AZP_TOKEN'=$token 'AZP_AGENT_NAME'=$agent 'AZP_POOL'=$pool --no-wait
