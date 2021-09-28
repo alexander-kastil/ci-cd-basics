@@ -5,9 +5,9 @@ loc=westeurope
 img='arambazamba/aciagentlinux'
 agent=aci-linux-agent-$rnd
 # update org name
-org='https://dev.azure.com/az-400-v2'
+org='https://dev.azure.com/integrations-training'
 # replace the token and uncomment if you have not exported the token to bash
-# token=ae3ypool6mvpf7624it7j4smbveyrics4rnpul...
+token=ykyd6sppye5q454hxtwog5cspa34atqigmagk7l5waml3b7qxtdq
 pool=aci-pool
 
 az group create -n $grp -l $loc
