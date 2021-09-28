@@ -2,7 +2,7 @@
 
 [![Build Status](https://dev.azure.com/az-400-v2/M06-CI/_apis/build/status/SPFxWebPart%20Build%20Yaml?branchName=main)](https://dev.azure.com/az-400-v2/M06-CI/_build/latest?definitionId=13&branchName=main)
 
-Sample SPFx repo available [here](https://github.com/ARambazamba/SPFxPipeline)
+Sample SPFx repo available [here](https://github.com/arambazamba/spfx-devops)
 
 ## Scaffolding & Basics
 
