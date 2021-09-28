@@ -6,3 +6,4 @@
 - Setup Custom Build Agent
 - Working with variables & triggers
 - Using templates
+- GitHub Actions CI
