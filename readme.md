@@ -1,16 +1,16 @@
 # Introduction to DevOps
 
-Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
+Companion Material for Class Delivery by [Alexander Pajer](https://github.com/arambazamba) containing:
 
-- [Requirements / Tooling](./Tooling)
-  - [Register Azure DevOps Organisation](./Tooling/07-AzDevOps)
-  - [Git & GitHub Basics](./Tooling/01-Github)
-  - [Visual Studio Code Intro](./Tooling/02-VSCode)
-  - [Document Repos using Markdown](./Tooling/03-Markdown)
-  - [Using Azure CLI](./Tooling/04-CLI)
-- [Instructor Demos](./Demos)
-- [Guided Scripts to setup an Azure hosted Development & Lab VM](./Setup)
-  - [Base Dev Environment Setup inkluding Visual Studio Code Extensions](./Setup/#basics)
+- [Requirements / Tooling](./tooling)
+  - [Register Azure DevOps Organisation](./tooling/07-azdevops)
+  - [Git & GitHub Basics](./tooling/01-github)
+  - [Visual Studio Code Intro](./tooling/02-vscode)
+  - [Document Repos using Markdown](./tooling/03-markdown)
+  - [Using Azure CLI](./tooling/04-cli)
+- [Instructor Demos](./demos)
+- [Guided Scripts to setup an Azure hosted Development & Lab VM](./setup)
+  - [Base Dev Environment Setup inkluding Visual Studio Code Extensions](./setup/#basics)
   - [Setup Windows Subsystem for Linux 2 - WSL2](./Setup/#wsl)
   - [Setup Docker & Kubernetes](./Setup/#docker-wsl)
   - [Use Teams in VM](./Setup/#teams)
