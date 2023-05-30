@@ -1,9 +1,8 @@
-# CI / CD Basics
+# Introduction to DevOps
 
 Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
 
 - [Requirements / Tooling](./Tooling)
-  - [Register Azure Pass](./Tooling/05-AzurePass)
   - [Register Azure DevOps Organisation](./Tooling/07-AzDevOps)
   - [Git & GitHub Basics](./Tooling/01-Github)
   - [Visual Studio Code Intro](./Tooling/02-VSCode)
@@ -27,11 +26,8 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
 
   Please do not use a Production Account for Training
 
-  - Using [Azure Passes](https://www.microsoftazurepass.com/)
   - Azure Paid / Sponsored Subscription
   - [Azure Trial Subscription](https://azure.microsoft.com/en-us/free/)
-
-> Note: Azure Passes can only be used once per e-mail account (Live ID)
 
 ## Contributing
 
