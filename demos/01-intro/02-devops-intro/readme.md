@@ -2,6 +2,7 @@
 
 ## Demos
 
+- Manual Deployment to Azure App Service
 - Azure DevOps: Simple CI/CD Pipeline
 
 ## Readings

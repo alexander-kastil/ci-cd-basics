@@ -2,18 +2,14 @@
 
 ## Demos
 
-- Git Basics & Mono Repo
+- Git Basics, Mono Repos & Markdown
 - Branching
-- Forks and Pull Requests
-- Conventional Commits, Change Log & Versioning
+- Pull Requests, Forks
+- Release & Conventional Commits
 
 ## Readings
 
 [Git Documentation](https://git-scm.com/docs)
-
-[Semantic Versioning](https://semver.org/)
-
-[Conventional Commits](https://www.conventionalcommits.org/)
 
 ## Extensions & Tools
 
@@ -27,7 +23,7 @@
 
 # Git / Github Essentials
 
-## Configuration
+## Base Configuration
 
 Set User and E-Mail
 
