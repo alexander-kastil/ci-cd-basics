@@ -14,8 +14,8 @@ pr: none
 variables:
   buildConfiguration: Release
   apifolder: apps/config-api/
-  azConnection: scClass
-  appService: config-api-1234
+  azConnection: scDevOpsIntro
+  appService: config-api-20671
 
 pool:
   vmImage: "ubuntu-20.04"
