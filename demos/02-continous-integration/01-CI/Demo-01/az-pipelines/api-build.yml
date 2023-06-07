@@ -1,16 +1,19 @@
-name: ".net core api build"
+name: api build
+
+# trigger:
+#   branches:
+#     include:
+#       - master
+#   paths:
+#     include:
+#       - apps/config-api/*
+
+trigger: none
+pr: none
 
 variables:
   buildConfiguration: Release
-  apifolder: FoodApi
-
-trigger:
-  branches:
-    include:
-      - master
-  paths:
-    include:
-      - $(apifolder)
+  apifolder: apps/config-api/
 
 pool:
   vmImage: "ubuntu-20.04"
@@ -23,11 +26,11 @@ stages:
 
         steps:
           - task: UseDotNet@2
-            displayName: "Install .NET 5 SDK"
+            displayName: "Install .NET 6 SDK"
             inputs:
               packageType: "sdk"
-              version: "5.x"
-              
+              version: "6.x"
+
           - task: DotNetCoreCLI@2
             displayName: Build
             inputs:
@@ -36,6 +39,7 @@ stages:
               arguments: "--configuration $(buildConfiguration)"
 
           - task: DotNetCoreCLI@2
+            displayName: DotNet Publish
             inputs:
               command: "publish"
               publishWebProjects: true
@@ -45,4 +49,4 @@ stages:
             inputs:
               PathtoPublish: "$(Build.ArtifactStagingDirectory)"
               ArtifactName: "drop"
-              publishLocation: "Container"
+              publishLocation: "Container" 

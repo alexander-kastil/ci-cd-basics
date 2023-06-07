@@ -41,7 +41,7 @@ stages:
               arguments: "--configuration $(buildConfiguration)"
 
           - task: DotNetCoreCLI@2
-            displayName: Publish
+            displayName: DotNet Publish
             inputs:
               command: "publish"
               publishWebProjects: true
