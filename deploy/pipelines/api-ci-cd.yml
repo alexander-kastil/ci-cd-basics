@@ -47,11 +47,11 @@ stages:
               publishWebProjects: true
               arguments: "--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)"
 
-          - task: PublishBuildArtifacts@1
+          - task: PublishPipelineArtifact@1
             inputs:
-              PathtoPublish: "$(Build.ArtifactStagingDirectory)"
-              ArtifactName: "drop"
-              publishLocation: "Container"  
+              targetPath: '$(Pipeline.Workspace)'
+              artifact: 'drop'
+              publishLocation: 'pipeline'
 
   - stage: "Deploy"
     displayName: "Deploy"
