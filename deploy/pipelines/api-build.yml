@@ -12,8 +12,9 @@ trigger: none
 pr: none
 
 variables:
+  dotnetSdkVersion: "6.x"
   buildConfiguration: Release
-  apifolder: apps/config-api/
+  path: apps/config-api/
 
 pool:
   vmImage: "ubuntu-20.04"
@@ -31,22 +32,35 @@ stages:
               packageType: "sdk"
               version: "6.x"
 
-          - task: DotNetCoreCLI@2
-            displayName: Build
+          - task: UseDotNet@2
+            displayName: "Use .NET Core SDK $(dotnetSdkVersion)"
             inputs:
-              command: build
-              projects: "$(apifolder)/*.csproj"
-              arguments: "--configuration $(buildConfiguration)"
+              version: "$(dotnetSdkVersion)"
 
           - task: DotNetCoreCLI@2
-            displayName: DotNet Publish
+            displayName: "Restore project dependencies"
+            inputs:
+              command: "restore"
+              projects: "$(path)/*.csproj"
+
+          - task: DotNetCoreCLI@2
+            displayName: "Build the project - $(buildConfiguration)"
+            inputs:
+              command: "build"
+              arguments: "--no-restore --configuration $(buildConfiguration)"
+              projects: "$(path)/*.csproj"
+
+          - task: DotNetCoreCLI@2
+            displayName: "Publish the project - $(buildConfiguration)"
             inputs:
               command: "publish"
-              publishWebProjects: true
-              arguments: "--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)"
+              projects: "$(path)/*.csproj"
+              publishWebProjects: false
+              arguments: "--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)"
+              zipAfterPublish: true
 
-          - task: PublishBuildArtifacts@1
+          - task: PublishPipelineArtifact@1
             inputs:
-              PathtoPublish: "$(Build.ArtifactStagingDirectory)"
-              ArtifactName: "drop"
-              publishLocation: "Container" 
+              targetPath: '$(Pipeline.Workspace)'
+              artifact: 'drop'
+              publishLocation: 'pipeline'

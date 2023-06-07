@@ -1,0 +1,53 @@
+name: ui-build
+
+# trigger:
+#   branches:
+#     include:
+#       - master
+#   paths:
+#     include:
+#       - apps/config-ui/*
+
+trigger: none
+pr: none
+
+variables:
+  path: apps/config-ui/
+
+pool:
+  vmImage: "ubuntu-20.04"
+
+stages:
+  - stage: Build
+    displayName: Build and Provision
+    jobs:
+      - job: ngBuild
+
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: "16.x"
+            displayName: "Install Node 16"
+
+          - script: npm i -g @angular/cli
+            displayName: "Install Angular CLI"
+            
+          - task: Cache@2
+            inputs:
+                key: '$(System.DefaultWorkingDirectory)/$(path)/package-lock.json'
+                path: '$(System.DefaultWorkingDirectory)/$(path)/node_modules'
+                cacheHitVar: 'ngCacheRestored'
+
+          - script: npm i            
+            displayName: "Install Dependencies"
+            workingDirectory: $(path)
+            condition: eq(variables['ngCacheRestored'],False)
+
+          - script: ng b -c production
+            displayName: "Create Build"
+            workingDirectory: $(path)
+
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: '$(System.DefaultWorkingDirectory)/$(path)dist/'
+              ArtifactName: 'ngapp'

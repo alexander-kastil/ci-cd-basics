@@ -15,7 +15,7 @@ variables:
   dotnetSdkVersion: "6.x"
   buildConfiguration: Release
   releaseBranchName: master
-  apifolder: apps/config-api/
+  path: apps/config-api/
   azConnection: scDevOpsIntro
   appService: config-api-20671
 
@@ -44,20 +44,20 @@ stages:
             displayName: "Restore project dependencies"
             inputs:
               command: "restore"
-              projects: "$(apifolder)/*.csproj"
+              projects: "$(path)/*.csproj"
 
           - task: DotNetCoreCLI@2
             displayName: "Build the project - $(buildConfiguration)"
             inputs:
               command: "build"
               arguments: "--no-restore --configuration $(buildConfiguration)"
-              projects: "$(apifolder)/*.csproj"
+              projects: "$(path)/*.csproj"
 
           - task: DotNetCoreCLI@2
             displayName: "Publish the project - $(buildConfiguration)"
             inputs:
               command: "publish"
-              projects: "$(apifolder)/*.csproj"
+              projects: "$(path)/*.csproj"
               publishWebProjects: false
               arguments: "--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)"
               zipAfterPublish: true
