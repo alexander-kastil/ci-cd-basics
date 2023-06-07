@@ -1,4 +1,4 @@
-name: api build
+name: ci-cd-intro
 
 # trigger:
 #   branches:
@@ -14,6 +14,8 @@ pr: none
 variables:
   buildConfiguration: Release
   apifolder: apps/config-api/
+  azConnection: scDevOpsIntro
+  appService: config-api-20671
 
 pool:
   vmImage: "ubuntu-20.04"
@@ -49,4 +51,24 @@ stages:
             inputs:
               PathtoPublish: "$(Build.ArtifactStagingDirectory)"
               ArtifactName: "drop"
-              publishLocation: "Container" 
+              publishLocation: "Container"  
+
+  - stage: "Deploy"
+    displayName: "Deploy"
+  
+    jobs:
+      - deployment: DeployAppService
+        displayName: Deploy to prod Appservice
+        environment: production
+        strategy:
+          runOnce:
+            deploy:
+              steps:                          
+              - task: AzureRmWebAppDeployment@4
+                displayName: "Azure App Service Deploy: $(appService)"
+                inputs:
+                  ConnectionType: "AzureRM"
+                  azureSubscription: $(azConnection)
+                  appType: "webApp"
+                  WebAppName: $(appService)
+                  packageForLinux: "$(Agent.BuildDirectory)/**/*.zip"
