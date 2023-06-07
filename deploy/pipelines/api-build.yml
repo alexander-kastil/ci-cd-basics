@@ -4,7 +4,7 @@ name: api build
 #   branches:
 #     include:
 #       - master
-#   flds:
+#   paths:
 #     include:
 #       - apps/config-api/*
 
@@ -14,7 +14,7 @@ pr: none
 variables:
   dotnetSdkVersion: "6.x"
   buildConfiguration: Release
-  fld: apps/config-api/
+  app: apps/config-api/
 
 pool:
   vmImage: "ubuntu-20.04"
@@ -41,26 +41,26 @@ stages:
             displayName: "Restore project dependencies"
             inputs:
               command: "restore"
-              projects: "$(fld)/*.csproj"
+              projects: "$(app)/*.csproj"
 
           - task: DotNetCoreCLI@2
             displayName: "Build the project - $(buildConfiguration)"
             inputs:
               command: "build"
               arguments: "--no-restore --configuration $(buildConfiguration)"
-              projects: "$(fld)/*.csproj"
+              projects: "$(app)/*.csproj"
 
           - task: DotNetCoreCLI@2
             displayName: "Publish the project - $(buildConfiguration)"
             inputs:
               command: "publish"
-              projects: "$(fld)/*.csproj"
+              projects: "$(app)/*.csproj"
               publishWebProjects: false
               arguments: "--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)"
               zipAfterPublish: true
 
           - task: PublishPipelineArtifact@1
             inputs:
-              targetfld: '$(Pipeline.Workspace)'
+              targetapp: '$(Pipeline.Workspace)'
               artifact: 'drop'
               publishLocation: 'pipeline'

@@ -12,7 +12,7 @@ trigger: none
 pr: none
 
 variables:
-  path: apps/config-ui/
+  app: apps/config-ui/
 
 pool:
   vmImage: "ubuntu-20.04"
@@ -21,7 +21,7 @@ stages:
   - stage: Build
     displayName: Build and Provision
     jobs:
-      - job: ngBuild
+      - job: ng-build
 
         steps:
           - task: NodeTool@0
@@ -34,20 +34,20 @@ stages:
             
           - task: Cache@2
             inputs:
-                key: '$(System.DefaultWorkingDirectory)/$(path)/package-lock.json'
-                path: '$(System.DefaultWorkingDirectory)/$(path)/node_modules'
+                key: '$(System.DefaultWorkingDirectory)/$(app)/package-lock.json'
+                app: '$(System.DefaultWorkingDirectory)/$(app)/node_modules'
                 cacheHitVar: 'ngCacheRestored'
 
           - script: npm i            
             displayName: "Install Dependencies"
-            workingDirectory: $(path)
+            workingDirectory: $(app)
             condition: eq(variables['ngCacheRestored'],False)
 
           - script: ng b -c production
             displayName: "Create Build"
-            workingDirectory: $(path)
+            workingDirectory: $(app)
 
           - task: PublishPipelineArtifact@1
             inputs:
-              targetPath: '$(System.DefaultWorkingDirectory)/$(path)dist/'
+              targetapp: '$(System.DefaultWorkingDirectory)/$(app)dist/'
               ArtifactName: 'ngapp'
