@@ -1,4 +1,4 @@
-name: ci-cd-intro
+name: api-ci-cd
 
 # trigger:
 #   branches:
@@ -12,7 +12,9 @@ trigger: none
 pr: none
 
 variables:
+  dotnetSdkVersion: "6.x"
   buildConfiguration: Release
+  releaseBranchName: master
   apifolder: apps/config-api/
   azConnection: scDevOpsIntro
   appService: config-api-20671
@@ -33,19 +35,32 @@ stages:
               packageType: "sdk"
               version: "6.x"
 
-          - task: DotNetCoreCLI@2
-            displayName: Build
+          - task: UseDotNet@2
+            displayName: "Use .NET Core SDK $(dotnetSdkVersion)"
             inputs:
-              command: build
-              projects: "$(apifolder)/*.csproj"
-              arguments: "--configuration $(buildConfiguration)"
+              version: "$(dotnetSdkVersion)"
 
           - task: DotNetCoreCLI@2
-            displayName: DotNet Publish
+            displayName: "Restore project dependencies"
+            inputs:
+              command: "restore"
+              projects: "$(apifolder)/*.csproj"
+
+          - task: DotNetCoreCLI@2
+            displayName: "Build the project - $(buildConfiguration)"
+            inputs:
+              command: "build"
+              arguments: "--no-restore --configuration $(buildConfiguration)"
+              projects: "$(apifolder)/*.csproj"
+
+          - task: DotNetCoreCLI@2
+            displayName: "Publish the project - $(buildConfiguration)"
             inputs:
               command: "publish"
-              publishWebProjects: true
-              arguments: "--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)"
+              projects: "$(apifolder)/*.csproj"
+              publishWebProjects: false
+              arguments: "--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)"
+              zipAfterPublish: true
 
           - task: PublishPipelineArtifact@1
             inputs:
