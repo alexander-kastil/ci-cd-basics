@@ -15,7 +15,7 @@ variables:
   app: apps/config-ui/
 
 pool:
-  vmImage: "ubuntu-20.04"
+  vmImage: ubuntu-20.04
 
 stages:
   - stage: Build
@@ -35,7 +35,7 @@ stages:
           - task: Cache@2
             inputs:
                 key: '$(System.DefaultWorkingDirectory)/$(app)/package-lock.json'
-                app: '$(System.DefaultWorkingDirectory)/$(app)/node_modules'
+                path: '$(System.DefaultWorkingDirectory)/$(app)/node_modules'
                 cacheHitVar: 'ngCacheRestored'
 
           - script: npm i            
@@ -49,5 +49,5 @@ stages:
 
           - task: PublishPipelineArtifact@1
             inputs:
-              targetapp: '$(System.DefaultWorkingDirectory)/$(app)dist/'
+              targetpath: '$(System.DefaultWorkingDirectory)/$(app)dist/'
               ArtifactName: 'ngapp'
