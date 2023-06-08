@@ -21,7 +21,7 @@ stages:
   - stage: Build
     displayName: Build and Provision
     jobs:
-      - job: ng-build
+      - job: ngbuild
 
         steps:
           - task: NodeTool@0
