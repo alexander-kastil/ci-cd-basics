@@ -1,0 +1,42 @@
+name: paralell-jobs
+
+trigger: none
+pr: none
+
+stages:
+
+- stage: CIandTest
+  displayName: CI and Test
+
+  jobs: 
+
+  - job: CI
+    displayName: Continous Integration
+    dependsOn: []
+    
+    steps:
+    - bash: |
+        echo "building project ..."
+      name: mockBuild
+
+  - job: Test
+    displayName: Testing
+    dependsOn: []
+    
+    steps: 
+    - bash: |
+        echo "testing project ..."
+      name: mockTest
+
+- stage: CD
+  displayName: CD
+  dependsOn: CIandTest
+  
+  jobs:
+    - job: DeploymentJob
+      displayName: Deployment
+     
+      steps:
+      - bash: |
+          echo "deploying ..."
+        name: mockDeployment

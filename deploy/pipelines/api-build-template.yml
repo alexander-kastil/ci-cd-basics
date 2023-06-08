@@ -1,0 +1,36 @@
+name: api build template
+
+# trigger:
+#   branches:
+#     include:
+#       - master
+#   paths:
+#     include:
+#       - apps/config-api/*
+
+trigger: none
+pr: none
+
+variables:
+  dotnetSdkVersion: "6.x"
+  buildConfiguration: Release
+  app: apps/config-api/
+
+pool:
+  vmImage: "ubuntu-20.04"
+
+stages:
+  - stage: "Build"
+    displayName: "Build"
+    jobs:
+      - job: "Build"
+        displayName: "Build Api"
+        
+        steps:
+          - template: templates/t-net-build.yaml
+            parameters:
+              cfg: $(buildConfiguration)
+              folder: $(folder)
+
+      - job: test_dotnet
+        displayName: "Test"

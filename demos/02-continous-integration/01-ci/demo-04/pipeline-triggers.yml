@@ -1,0 +1,27 @@
+name: pipeline-triggers
+
+trigger:
+  branches:
+    include:
+      - master
+  paths:
+    include:
+    - testfolder
+    exclude:
+    - deploy
+
+stages:
+
+- stage: CI
+  displayName: CI and Test
+
+  jobs: 
+
+  - job: CI
+    displayName: Continous Integration
+    dependsOn: []
+    
+    steps:
+    - bash: |
+        echo "building project ..."
+      name: mockBuild
