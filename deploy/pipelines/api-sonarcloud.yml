@@ -9,11 +9,11 @@ pr:
 variables:
   dotnetSdkVersion: "6.x"
   buildConfiguration: "Release"
-  folder: apps/catalog-api/api/
+  app: apps/config-api/
   con: scSonar
   org: integrations-training
-  projKey: integrations-training_az-400
-  projName: az-400
+  # projKey: integrations-training_az-400
+  # projName: az-400
 
 
 pool:
@@ -50,7 +50,7 @@ steps:
     inputs:
       command: "build"
       arguments: "--no-restore --configuration $(buildConfiguration)"
-      projects: "$(folder)/*.csproj"
+      projects: "$(app)/*.csproj"
 
   - task: DotNetCoreCLI@2
     displayName: "Run unit tests - $(buildConfiguration)"
@@ -58,7 +58,7 @@ steps:
       command: "test"
       arguments: '--no-build --configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat="cobertura%2copencover" /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
       publishTestResults: true
-      projects: "testfolder/*.csproj"
+      projects: "testapp/*.csproj"
 
   - task: SonarCloudAnalyze@1
     displayName: "Run SonarCloud code analysis"
