@@ -12,8 +12,8 @@ variables:
   app: apps/config-api/
   con: scSonar
   org: integrations-training
-  # projKey: integrations-training_az-400
-  # projName: az-400
+  projKey: ci-cd-basics
+  projName: ci-cd-basics
 
 
 pool:
