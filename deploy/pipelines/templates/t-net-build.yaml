@@ -7,6 +7,10 @@ parameters:
     type: string
     default: ""
 
+  - name: artifactName
+    type: string
+    default: "drop"
+
 steps:
   - task: UseDotNet@2
     displayName: "Install .NET 6 SDK"
@@ -36,8 +40,8 @@ steps:
       arguments: "--no-build --configuration ${{ parameters.cfg }} --output $(Build.ArtifactStagingDirectory)/${{ parameters.cfg }}"
       zipAfterPublish: true
 
-  - task: PublishBuildArtifacts@1
+  - task: PublishPipelineArtifact@1
     inputs:
-      PathtoPublish: "$(Build.ArtifactStagingDirectory)"
-      ArtifactName: "drop"
-      publishLocation: "Container"
+      targetapp: $(Pipeline.Workspace)
+      artifact: $(artifactName)
+      publishLocation: 'pipeline'

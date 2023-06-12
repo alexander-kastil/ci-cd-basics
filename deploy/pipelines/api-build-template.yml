@@ -15,6 +15,7 @@ variables:
   dotnetSdkVersion: "6.x"
   buildConfiguration: Release
   app: apps/config-api/
+  pkg: apibuild
 
 pool:
   vmImage: "ubuntu-20.04"
@@ -31,3 +32,4 @@ stages:
             parameters:
               cfg: $(buildConfiguration)
               folder: $(app)
+              artifactName: $(pkg)
