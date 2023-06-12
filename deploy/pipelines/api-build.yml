@@ -59,8 +59,8 @@ stages:
               arguments: "--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)"
               zipAfterPublish: true
 
-          - task: PublishPipelineArtifact@1
+          - task: PublishBuildArtifacts@1
             inputs:
-              targetapp: '$(Pipeline.Workspace)'
-              artifact: 'drop'
-              publishLocation: 'pipeline'
+              PathtoPublish: "$(Build.ArtifactStagingDirectory)"
+              ArtifactName: "drop"
+              publishLocation: "Container"

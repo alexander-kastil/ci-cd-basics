@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace AppSettingsWebApi
+namespace ConfigApi
 {
     public class Startup
     {
@@ -33,7 +33,7 @@ namespace AppSettingsWebApi
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "AppSettingsWebApi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ConfigApi", Version = "v1" });
             });
         }
 
@@ -43,7 +43,7 @@ namespace AppSettingsWebApi
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AppSettingsWebApi v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ConfigApi v1"));
             }
 
             app.UseHttpsRedirection();

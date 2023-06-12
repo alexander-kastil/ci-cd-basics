@@ -1,0 +1,49 @@
+name: api build test
+
+# trigger:
+#   branches:
+#     include:
+#       - master
+#   paths:
+#     include:
+#       - apps/config-api/*
+
+trigger: none
+pr: none
+
+variables:
+  dotnetSdkVersion: "6.x"
+  buildConfiguration: Release
+  app: apps/config-api/
+  pkg: apibuild
+
+pool:
+  vmImage: "ubuntu-20.04"
+
+stages:
+  - stage: "Build"
+    displayName: "Build"
+    jobs:
+      - job: "Build"
+        displayName: "Build Api"
+        
+        steps:
+          - template: templates/t-net-build.yaml
+            parameters:
+              cfg: $(buildConfiguration)
+              folder: $(app)
+              artifact: $(pkg)
+
+  - stage: Test
+    displayName: Test
+    dependsOn: Build
+
+    jobs:
+      - job: Test
+
+        steps:
+          - task: DotNetCoreCLI@2
+            inputs:
+              command: "test"
+              projects: "$(app)-tests/*.csproj"
+              arguments: "--configuration $(buildConfiguration)"

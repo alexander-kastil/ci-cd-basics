@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace AppSettingsWebApi
+namespace ConfigApi
 {
     public class AppConfig
     {
