@@ -1,0 +1,12 @@
+rnd=$RANDOM
+grp=devops-intro
+loc=westeurope
+img='arambazamba/devopsagentlinux'
+agent=aci-linux-agent-$RANDOM
+devopsorg='https://dev.azure.com/integrations-training'
+pool=aci-pool
+token=ykyd6sppye5q454hxtwog5cspa34atqigmagk7l5waml3b7....
+
+az group create -n $grp -l $loc
+
+az container create -g $grp -l $loc -n $agent --image $img --cpu 1 --memory 1 --dns-name-label $agent --port 80 --environment-variables 'AZP_URL'=$devopsorg 'AZP_TOKEN'=$token 'AZP_AGENT_NAME'=$agent 'AZP_POOL'=$pool

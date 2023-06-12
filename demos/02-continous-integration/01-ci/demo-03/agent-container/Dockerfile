@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # To make it easier for build and release pipelines to run apt-get,
 # configure apt to not require confirmation (assume the -y argument by default)
@@ -15,7 +15,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     iputils-ping \
     libcurl4 \
-    libicu60 \
     libunwind8 \
     netcat \
     libssl1.0 \
@@ -25,7 +24,7 @@ RUN curl -LsS https://aka.ms/InstallAzureCLIDeb | bash \
   && rm -rf /var/lib/apt/lists/*
 
 ARG TARGETARCH=amd64
-ARG AGENT_VERSION=2.185.1
+ARG AGENT_VERSION=3.220.5
 
 WORKDIR /azp
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
@@ -37,9 +36,6 @@ RUN if [ "$TARGETARCH" = "amd64" ]; then \
 
 COPY ./start.sh .
 COPY installers /installers
-
-RUN /installers/netcore.sh
-RUN /installers/node.sh
 
 RUN chmod +x start.sh
 

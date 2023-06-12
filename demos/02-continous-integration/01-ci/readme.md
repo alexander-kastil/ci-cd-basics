@@ -2,7 +2,6 @@
 
 - .NET CI
 - Angular CI
-- SharePoint Framework CI
-- Setup Custom Build Agent
+- Pipeline Agents
 - Working with variables & triggers
 - Using templates

@@ -1,4 +1,4 @@
-# Pipelines & YAML: basics, expressions & conditions, variabes, triggers
+# YAML: Basics, expressions & conditions, variabes, triggers
 
 ![key-concepts-overview](_images/key-concepts-overview.svg)
 

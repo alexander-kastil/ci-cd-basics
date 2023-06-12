@@ -21,7 +21,7 @@ stages:
             displayName: "Install .NET 5 SDK"
             inputs:
               packageType: "sdk"
-              version: "5.x"
+              version: "6.x"
 
           - task: DotNetCoreCLI@2
             displayName: Build
