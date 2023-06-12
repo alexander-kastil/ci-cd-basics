@@ -10,7 +10,7 @@ variables:
   dotnetSdkVersion: "6.x"
   buildConfiguration: "Release"
   folder: apps/catalog-api/api/
-  con: scSonarCloud
+  con: scSonar
   org: integrations-training
   projKey: integrations-training_az-400
   projName: az-400
