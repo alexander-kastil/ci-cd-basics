@@ -11,8 +11,8 @@ variables:
   buildConfiguration: "Release"
   app: apps/config-api/
   con: scSonar
-  org: integrations-training
-  projKey: ci-cd-basics
+  org: arambazamba
+  projKey: arambazamba_ci-cd-basics
   projName: ci-cd-basics
 
 
