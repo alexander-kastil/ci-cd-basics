@@ -32,4 +32,4 @@ stages:
             parameters:
               cfg: $(buildConfiguration)
               folder: $(app)
-              artifactName: $(pkg)
+              artifact: $(pkg)

@@ -7,7 +7,7 @@ parameters:
     type: string
     default: ""
 
-  - name: artifactName
+  - name: artifact
     type: string
     default: "drop"
 
@@ -42,6 +42,6 @@ steps:
 
   - task: PublishPipelineArtifact@1
     inputs:
-      targetapp: $(Pipeline.Workspace)
-      artifact: $(artifactName)
+      targetapp: $(ArtifactStagingDirectory)
+      artifact: ${{ parameters.artifact }}
       publishLocation: 'pipeline'
