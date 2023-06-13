@@ -1,4 +1,3 @@
-# Container Basics
+# Container Continuous Deployment
 
-- Build Container & Upload to Container Registry
-- AKS Basics & Deployment using Pipeline
+- Deploy to Azure Container Apps
