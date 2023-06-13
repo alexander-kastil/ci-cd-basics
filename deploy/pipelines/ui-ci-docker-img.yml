@@ -14,7 +14,7 @@ pr: none
 variables:
   app: apps/config-ui/
   imageName: config-ui
-  dockerCon: scDockerHub
+  dockerCon: scACR
 
 pool:
   vmImage: "ubuntu-latest"
