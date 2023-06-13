@@ -6,7 +6,7 @@ name: api mend
 #       - master
 #   paths:
 #     include:
-#       - food-api
+#       - apps/config-api/*
 
 trigger: none
 pr: none

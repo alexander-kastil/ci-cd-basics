@@ -1,0 +1,44 @@
+name: api-ci-docker-img
+
+# trigger:
+#   branches:
+#     include:
+#       - master
+#   paths:
+#     include:
+#       - apps/config-api/*
+
+trigger: none      
+pr: none
+
+variables:
+  app: apps/config-api/
+  imageName: config-api:pipeline
+
+pool:
+  vmImage: "ubuntu-latest"
+
+stages:
+  - stage: "BuildImg"
+    displayName: "Build Api Image"
+    jobs:
+      - job: "Build"
+        steps:
+          - task: Docker@2
+            displayName: Login to ACR
+            inputs:
+              command: login
+              containerRegistry: conACR
+
+          - task: Docker@2
+            displayName: Build and Push
+            inputs:
+              repository: '$(imageName)'
+              command: 'buildAndPush'
+              Dockerfile: '$(app)dockerfile'
+
+          - task: Docker@2
+            displayName: Logout of ACR
+            inputs:
+              command: logout
+              containerRegistry: conACR
