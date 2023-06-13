@@ -13,7 +13,7 @@ pr: none
 
 variables:
   app: apps/config-api/
-  imageName: config-api:pipeline
+  imageName: config-api
   dockerCon: scDockerHub
 
 
