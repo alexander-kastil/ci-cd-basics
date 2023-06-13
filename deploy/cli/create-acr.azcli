@@ -1,0 +1,10 @@
+env=$RANDOM
+grp=devops-intro
+loc=westeurope
+acr=devopsintro$env
+
+az group create -n $grp -l westeurope
+
+az acr create -g $grp --name $acr --sku Basic
+az acr login --name $acr
+az acr update --name $acr --admin-enabled true
