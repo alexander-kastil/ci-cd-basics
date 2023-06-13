@@ -12,11 +12,3 @@ az appservice plan create -n $appPlan -g $grp --sku FREE
 
 # create a Web App
 az webapp create -n $web -g $grp --plan $appPlan
-
-# print out the FQDN for the Web App
-echo "Use this number for your Deploy Pipeline: $rnd"
-echo "Web Url: http://$web.azurewebsites.net"
-
-# cleanup after demo
-
-# az group delete -n $grp -y --no-wait
