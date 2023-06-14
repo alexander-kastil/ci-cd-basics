@@ -39,7 +39,8 @@ stages:
     dependsOn: Build
 
     jobs:
-      - job: Unit-Test
+      - job: UnitTest
+        displayName: "Unit Test"
 
         steps:
           - task: DotNetCoreCLI@2
