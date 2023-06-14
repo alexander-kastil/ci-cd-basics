@@ -16,7 +16,6 @@ variables:
   imageName: config-api
   dockerCon: scACR
 
-
 pool:
   vmImage: "ubuntu-latest"
 
