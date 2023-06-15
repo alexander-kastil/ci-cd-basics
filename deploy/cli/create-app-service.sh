@@ -1,4 +1,4 @@
-env=$RANDOM
+env=$1
 grp=devops-intro
 loc=westeurope
 appPlan=configapp-$env
