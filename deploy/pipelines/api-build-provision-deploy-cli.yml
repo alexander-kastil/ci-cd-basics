@@ -33,6 +33,7 @@ stages:
               folder: $(folder)
       
       - job: Provision
+        dependsOn: []
         steps:
         - task: AzureCLI@2
           displayName: 'Provision AppService'
