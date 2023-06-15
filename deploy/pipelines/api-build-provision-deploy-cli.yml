@@ -22,7 +22,7 @@ pool:
   vmImage: "ubuntu-20.04"
 
 stages:
-  - stage: Build
+  - stage: BuildProvision
     displayName: Build and Provision
     jobs:
       - job: Build
@@ -41,12 +41,12 @@ stages:
             azureSubscription: '$(azConnection)'
             scriptType: 'bash'
             scriptLocation: 'scriptPath'
-            scriptPath: '$(System.DefaultWorkingDirectory)/deploy/az-cli/create-api.sh'
+            scriptPath: '$(System.DefaultWorkingDirectory)/deploy/az-cli/create-app-service.sh'
             arguments: $(appservice)
 
   - stage: Deploy
     displayName: Deploy
-    dependsOn: Build
+    dependsOn: BuildProvision
 
     jobs:
       - deployment: DeployAppService
