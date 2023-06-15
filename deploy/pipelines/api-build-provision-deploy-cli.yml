@@ -17,6 +17,7 @@ variables:
   app: apps/config-api/
   azConnection: scDevOpsIntro  
   appservice: configapi-cli
+  pkg: apidrop
 
 pool:
   vmImage: "ubuntu-20.04"
@@ -31,6 +32,7 @@ stages:
             parameters:
               cfg: $(buildConfiguration)
               folder: $(folder)
+              artifact: $(pkg)
       
       - job: Provision
         dependsOn: []
