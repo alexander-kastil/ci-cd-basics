@@ -41,7 +41,7 @@ stages:
             azureSubscription: '$(azConnection)'
             scriptType: 'bash'
             scriptLocation: 'scriptPath'
-            scriptPath: '$(System.DefaultWorkingDirectory)/deploy/az-cli/create-app-service.sh'
+            scriptPath: '$(System.DefaultWorkingDirectory)/deploy/cli/create-app-service.sh'
             arguments: $(appservice)
 
   - stage: Deploy
